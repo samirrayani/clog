@@ -176,6 +176,7 @@
       const THOUGHTS = 'thoughts';
       let showingForm = false;
 
+      delete Hammer.defaults.cssProps.userSelect;
       let mc2 = new Hammer($('body')[0], {recognizers: [[Hammer.Swipe,{ direction: Hammer.DIRECTION_VERTICAL }]]});
       let mc3 = new Hammer($('.form')[0], {recognizers: [[Hammer.Swipe,{ direction: Hammer.DIRECTION_VERTICAL }]]});
 
